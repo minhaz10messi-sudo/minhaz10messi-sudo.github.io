@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FC Young Boys - Official Website</title>
-      <link rel="shortcut icon" href="image/WhatsApp Image 2025-10-15 at 12.09.52_98a085ad.jpg" type="Image/x-icon">
+    <link rel="shortcut icon" href="image/WhatsApp Image 2025-10-15 at 12.09.52_98a085ad.jpg" type="Image/x-icon">
     <style>
         body {
             box-sizing: border-box;
@@ -224,6 +224,7 @@
         .player-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
         }
 
         .player-photo {
@@ -428,6 +429,318 @@
             margin-bottom: 0.5rem;
         }
 
+        /* Footer Styles */
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+            border-top: 3px solid #ffd700;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            color: #ffd700;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 2px solid transparent;
+        }
+
+        .social-link:hover {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #1e3c72;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+            border-color: #ffd700;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-title {
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .phone-number {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-description {
+            font-size: 1rem;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Enrollment Form Styles */
+        .enrollment-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section h3 {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #ffd700;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ffd700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #1e3c72;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Player Profile Modal Styles */
+        .player-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .player-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80%;
+            overflow-y: auto;
+            border: 2px solid #ffd700;
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .modal-player-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: block;
+            object-fit: cover;
+            border: 4px solid #ffd700;
+        }
+
+        .modal-player-name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-player-position {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 20px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .modal-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .modal-stat {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .modal-stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .modal-stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .modal-description {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-menu {
@@ -455,6 +768,22 @@
                 flex-direction: column;
                 gap: 1rem;
             }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .footer-title {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -468,6 +797,7 @@
                 <li class="nav-item" onclick="showPage('players')">Players</li>
                 <li class="nav-item" onclick="showPage('scores')">Scores</li>
                 <li class="nav-item" onclick="showPage('about')">About</li>
+                <li class="nav-item" onclick="showPage('enrollment')">Join Team</li>
             </ul>
         </div>
     </nav>
@@ -483,30 +813,61 @@
                 <div class="team-image-container">
                     <img src="image/548282552_122161078100766050_1180900231644875141_n.jpg" alt="FC Young Boys Team Photo" class="team-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="team-image-placeholder" style="display: none;">
-                        📷 Add your team photo to display it here
+                        📷 Add your team photo as "team-photo.jpg" to display it here
                     </div>
                 </div>
             </div>
 
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">32</div>
+                    <div class="stat-number">33</div>
                     <div class="stat-label">Wins This Season</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">7</div>
+                    <div class="stat-number">6</div>
                     <div class="stat-label">Losses</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">6</div>
+                    <div class="stat-number">7</div>
                     <div class="stat-label">Draws</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">45+</div>
+                    <div class="stat-number">50+</div>
                     <div class="stat-label">Goals Scored</div>
                 </div>
             </div>
         </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3 class="footer-title">Connect With FC Young Boys</h3>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61572981502189" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📘</span>
+                        <span>Follow us on Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/fcyb_2025/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📷</span>
+                        <span>Follow us on Instagram</span>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-title">📞 Contact Us</div>
+                    <div class="phone-number">+8801741550922</div>
+                    <div class="contact-description">
+                        Call us for team inquiries, match tickets, or youth academy information. 
+                        Available Monday-Friday, 9 AM - 6 PM EST.
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    © 2025 FC Young Boys - Dhaka, Bangladesh | All Rights Reserved
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- Players Page -->
@@ -519,7 +880,7 @@
 
             <div class="players-grid">
                 <!-- Goalkeepers -->
-                <div class="player-card goalkeeper">
+                <div class="player-card goalkeeper" onclick="showPlayerProfile('Minhaz Uddin', 'Goalkeeper', 'image/IMG_3751.JPG', '20', '98', 'Clean Sheets', 'Saves', 'Jake Wilson is our reliable goalkeeper with excellent reflexes and leadership skills. He joined the team in 2022 and has been instrumental in our defensive success.')">
                     <img src="image/IMG_3751.JPG" alt="Minhaz Uddin" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Minhaz Uddin</div>
@@ -536,25 +897,25 @@
                     </div>
                 </div>
 
-                <div class="player-card goalkeeper">
+                <div class="player-card goalkeeper" onclick="showPlayerProfile('Sifat Abdullah', 'Goalkeeper', 'image/IMG_3262.JPG', '8', '45', 'Clean Sheets', 'Saves', 'Michael Chen is our backup goalkeeper with incredible shot-stopping ability. Known for his quick reflexes and excellent distribution, he provides solid competition for the #1 spot.')">
                     <img src="image/IMG_3262.JPG" alt="Sifat Abdullah" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Sifat Abdullah</div>
                     <div class="player-position">Goalkeeper</div>
                     <div class="player-stats">
                         <div class="player-stat">
-                            <div class="player-stat-number">12</div>
+                            <div class="player-stat-number">8</div>
                             <div class="player-stat-label">Clean Sheets</div>
                         </div>
                         <div class="player-stat">
-                            <div class="player-stat-number">65</div>
+                            <div class="player-stat-number">45</div>
                             <div class="player-stat-label">Saves</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Defenders -->
-                <div class="player-card defender">
+                <div class="player-card defender" onclick="showPlayerProfile('Md Ashik(VC)', 'Defender', 'image/IMG_3382.JPG', '3', '15', 'Goals', 'Tackles', 'David Smith is our captain and central defender. A natural leader with excellent aerial ability and strong defensive positioning. He leads by example both on and off the pitch.')">
                     <img src="image/IMG_3382.JPG" alt="Md Ashik" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Md Ashik(VC)</div>
@@ -571,8 +932,8 @@
                     </div>
                 </div>
 
-                <div class="player-card defender">
-                    <img src="image/IMG_3219.JPG" alt="Anik" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="player-card defender" onclick="showPlayerProfile('Anik', 'Defender', 'image/IMG_3219.JPG', '2', '22', 'Goals', 'Tackles', 'Roberto Silva is a versatile defender who can play both center-back and full-back positions. Known for his pace and ability to contribute in attack with overlapping runs.')">
+                    <img src="image/IMG_3219.JPG" alt="RAnik" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Anik</div>
                     <div class="player-position">Defender</div>
@@ -588,14 +949,14 @@
                     </div>
                 </div>
 
-                <div class="player-card defender">
+                <div class="player-card defender" onclick="showPlayerProfile('Shadin', 'Defender', 'player5.jpg', '0', '18', 'Goals', 'Tackles', 'Ahmed Hassan is a solid center-back with excellent reading of the game. His composure under pressure and accurate passing make him crucial in building attacks from the back.')">
                     <img src="player5.jpg" alt="Shadin" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Shadin</div>
                     <div class="player-position">Defender</div>
                     <div class="player-stats">
                         <div class="player-stat">
-                            <div class="player-stat-number">1</div>
+                            <div class="player-stat-number">0</div>
                             <div class="player-stat-label">Goals</div>
                         </div>
                         <div class="player-stat">
@@ -605,14 +966,14 @@
                     </div>
                 </div>
 
-                <div class="player-card defender">
+                <div class="player-card defender" onclick="showPlayerProfile('Siam Hosen Raj', 'Defender', 'player6.jpg', '1', '20', 'Goals', 'Tackles', 'Thomas Mueller is an attacking full-back who loves to get forward. His crossing ability and set-piece delivery make him a constant threat in the final third.')">
                     <img src="player6.jpg" alt="Siam Hosen Raj" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Siam Hosen Raj</div>
                     <div class="player-position">Defender</div>
                     <div class="player-stats">
                         <div class="player-stat">
-                            <div class="player-stat-number">1</div>
+                            <div class="player-stat-number">4</div>
                             <div class="player-stat-label">Goals</div>
                         </div>
                         <div class="player-stat">
@@ -622,27 +983,27 @@
                     </div>
                 </div>
 
-                <div class="player-card defender">
+                <div class="player-card defender" onclick="showPlayerProfile('SAMIR', 'Defender', 'image/IMG_2933.JPG', '3', '35', 'Goals', 'Tackles', 'SAMIR is our defensive stalwart, rarely beaten in one-on-one situations. His work rate and commitment to defending make him invaluable to the team structure.')">
                     <img src="image/IMG_2933.JPG" alt="SAMIR " class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">SAMIR </div>
                     <div class="player-position">Defender</div>
                     <div class="player-stats">
                         <div class="player-stat">
-                            <div class="player-stat-number">6</div>
+                            <div class="player-stat-number">3</div>
                             <div class="player-stat-label">Goals</div>
                         </div>
                         <div class="player-stat">
-                            <div class="player-stat-number">25</div>
+                            <div class="player-stat-number">35</div>
                             <div class="player-stat-label">Tackles</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="player-card defender">
-                    <img src="player 8" alt=" Siam" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="player-card defender" onclick="showPlayerProfile('Siam', 'Defender', 'player8.jpg', '0', '6', 'Goals', 'Tackles', 'Siam is a young and promising defender with great potential. His speed and agility make him perfect for covering ground and supporting both defense and attack.')">
+                    <img src="player8.jpg" alt="Siam" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
-                    <div class="player-name">Siam </div>
+                    <div class="player-name">Siam</div>
                     <div class="player-position">Defender</div>
                     <div class="player-stats">
                         <div class="player-stat">
@@ -650,14 +1011,14 @@
                             <div class="player-stat-label">Goals</div>
                         </div>
                         <div class="player-stat">
-                            <div class="player-stat-number">16</div>
+                            <div class="player-stat-number">6</div>
                             <div class="player-stat-label">Tackles</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Midfielders -->
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Mohim Chowdhury', 'Midfielder', 'player9.jpg', '8', '26', 'Goals', 'Assists', 'Alex Liu is our creative playmaker with exceptional vision and passing ability. His ability to find space and create chances makes him the heart of our midfield.')">
                     <img src="image/IMG_3220.JPG" alt="Mohim Chowdhury" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Mohim Chowdhury</div>
@@ -674,14 +1035,14 @@
                     </div>
                 </div>
 
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Faisal Ahmed', 'Midfielder', 'image/IMG_3366.JPG', '15', '26', 'Goals', 'Assists', 'Ryan Brown is a box-to-box midfielder with incredible work rate. His ability to contribute both defensively and offensively makes him invaluable to the team balance.')">
                     <img src="image/IMG_3366.JPG" alt="Faisal Ahmed" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
-                    <div class="player-name">Faisal Ahmed(C)</div>
+                    <div class="player-name">Faisal Ahmed</div>
                     <div class="player-position">Midfielder</div>
                     <div class="player-stats">
                         <div class="player-stat">
-                            <div class="player-stat-number">12</div>
+                            <div class="player-stat-number">15</div>
                             <div class="player-stat-label">Goals</div>
                         </div>
                         <div class="player-stat">
@@ -691,7 +1052,7 @@
                     </div>
                 </div>
 
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Istiak Ahmed', 'Midfielder', 'image/WhatsApp Image 2025-10-15 at 12.06.01_4ac21bd9.jpg', '10', '12', 'Goals', 'Assists', 'Luca Rossi is a technical midfielder with excellent ball control and dribbling skills. His ability to beat players in tight spaces creates opportunities for the team.')">
                     <img src="image/WhatsApp Image 2025-10-15 at 12.06.01_4ac21bd9.jpg" alt="Istiak Ahmed" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Istiak Ahmed</div>
@@ -708,8 +1069,8 @@
                     </div>
                 </div>
 
-                <div class="player-card midfielder">
-                    <img src="image/IMG_3221.JPG" alt="Md Omar" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Md Omar', 'Midfielder', 'image/IMG_3221.JPG', '4', '8', 'Goals', 'Assists', 'James Anderson is a defensive midfielder who excels at breaking up play and distributing the ball. His tactical awareness and positioning are crucial to our defensive structure.')">
+                    <img src="image/IMG_3221.JPG" alt="Md Omarn" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Md Omar</div>
                     <div class="player-position">Midfielder</div>
@@ -725,7 +1086,7 @@
                     </div>
                 </div>
 
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Mahady Hossin', 'Midfielder', 'image/IMG_5053.JPG', '11', '9', 'Goals', 'Assists', 'Carlos Torres is an attacking midfielder with a keen eye for goal. His ability to arrive late in the box and finish chances makes him a constant scoring threat.')">
                     <img src="image/IMG_5053.JPG" alt="Mahady Hossin" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Mahady Hossin</div>
@@ -742,7 +1103,7 @@
                     </div>
                 </div>
 
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Ashiqur Rahman Tuhin ', 'Midfielder', 'image/IMG_3215.JPG', '7', '11', 'Goals', 'Assists', 'Yuki Tanaka is a versatile midfielder who can play multiple positions. His intelligence and adaptability make him a valuable asset in different tactical setups.')">
                     <img src="image/IMG_3215.JPG" alt="Ashiqur Rahman Tuhin " class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Ashiqur Rahman Tuhin </div>
@@ -759,7 +1120,7 @@
                     </div>
                 </div>
 
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Samuel Okafor', 'Midfielder', 'player15.jpg', '3', '6', 'Goals', 'Assists', 'Samuel Okafor is a young midfielder with great potential. His energy and willingness to learn make him an exciting prospect for the future of the club.')">
                     <img src="player15.jpg" alt="Samuel Okafor" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Samuel Okafor</div>
@@ -776,7 +1137,7 @@
                     </div>
                 </div>
 
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Salman', 'Midfielder', 'image/IMG_3206.JPG', '9', '7', 'Goals', 'Assists', 'Erik Johansson is a dynamic midfielder with excellent shooting ability from distance. His powerful strikes and set-piece expertise add another dimension to our attack.')">
                     <img src="image/IMG_3206.JPG" alt="Salman" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Salman</div>
@@ -794,14 +1155,14 @@
                 </div>
 
                 <!-- Strikers -->
-                <div class="player-card striker">
+                <div class="player-card striker" onclick="showPlayerProfile('Labibe', 'Striker', 'image/IMG_3107.JPG', '18', '7', 'Goals', 'Assists', 'Marcus Johnson is our top scorer and team captain. A clinical finisher with excellent positioning and leadership qualities. His experience and goal-scoring ability make him our most dangerous attacking threat.')">
                     <img src="image/IMG_3107.JPG" alt="Labibe" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Labibe</div>
                     <div class="player-position">Striker</div>
                     <div class="player-stats">
                         <div class="player-stat">
-                            <div class="player-stat-number">18</div>
+                            <div class="player-stat-number">5</div>
                             <div class="player-stat-label">Goals</div>
                         </div>
                         <div class="player-stat">
@@ -811,10 +1172,10 @@
                     </div>
                 </div>
 
-                <div class="player-card striker">
-                    <img src="image/IMG_2927.JPG" alt="Md.Furqan " class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="player-card striker" onclick="showPlayerProfile('Md.Furqan', 'Striker', 'image/IMG_2927.JPG', '14', '5', 'Goals', 'Assists', 'Diego Martinez is a pacey striker with excellent dribbling skills. His ability to run at defenders and create chances out of nothing makes him a nightmare for opposing defenses.')">
+                    <img src="image/IMG_2927.JPG" alt="Md.Furqan" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
-                    <div class="player-name">Md.Furqan </div>
+                    <div class="player-name">Md.Furqan</div>
                     <div class="player-position">Striker</div>
                     <div class="player-stats">
                         <div class="player-stat">
@@ -828,7 +1189,7 @@
                     </div>
                 </div>
 
-                <div class="player-card striker">
+                <div class="player-card striker" onclick="showPlayerProfile('Alve Rahaman', 'Striker', 'image/IMG_3821.JPG', '12', '4', 'Goals', 'Assists', 'Antoine Dubois is a physical striker who excels in aerial duels and hold-up play. His strength and ability to bring teammates into play make him perfect for our tactical system.')">
                     <img src="image/IMG_3821.JPG" alt="Alve Rahaman" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Alve Rahaman</div>
@@ -845,7 +1206,7 @@
                     </div>
                 </div>
 
-                <div class="player-card striker">
+                <div class="player-card striker" onclick="showPlayerProfile('Benjamin Clarke', 'Striker', 'player20.jpg', '10', '6', 'Goals', 'Assists', 'Benjamin Clarke is a versatile forward who can play across the front line. His work rate and ability to track back defensively make him valuable in our pressing system.')">
                     <img src="player20.jpg" alt="Benjamin Clarke" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Benjamin Clarke</div>
@@ -862,14 +1223,14 @@
                     </div>
                 </div>
 
-                <div class="player-card striker">
-                    <img src="image/IMG_3874.JPG" alt="Anas Ahmed " class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="player-card striker" onclick="showPlayerProfile('Anas Ahmed', 'Striker', 'image/IMG_3874.JPG', '8', '3', 'Goals', 'Assists', 'Aleksandr Petrov is a technical striker with excellent first touch and finishing ability. His composure in front of goal and link-up play make him a reliable option in attack.')">
+                    <img src="image/IMG_3874.JPG" alt="Anas Ahmed" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
-                    <div class="player-name">Anas Ahmed </div>
+                    <div class="player-name">Anas Ahmed</div>
                     <div class="player-position">Striker</div>
                     <div class="player-stats">
                         <div class="player-stat">
-                            <div class="player-stat-number">5</div>
+                            <div class="player-stat-number">8</div>
                             <div class="player-stat-label">Goals</div>
                         </div>
                         <div class="player-stat">
@@ -879,7 +1240,7 @@
                     </div>
                 </div>
 
-                <div class="player-card striker">
+                <div class="player-card striker" onclick="showPlayerProfile('Tamim', 'Striker', 'image/IMG_3322.JPG', '6', '2', 'Goals', 'Assists', 'Noah Williams is a young striker with tremendous potential. His pace and direct running style make him an exciting prospect for the future of our attack.')">
                     <img src="image/IMG_3322.JPG" alt="Tamim" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Tamim</div>
@@ -897,7 +1258,7 @@
                 </div>
 
                 <!-- Additional Players to reach 24 -->
-                <div class="player-card midfielder">
+                <div class="player-card midfielder" onclick="showPlayerProfile('Junaed Ali', 'Midfielder', 'image/500059722_122132986706766050_7046151034358366166_n.jpg', '2', '5', 'Goals', 'Assists', 'Lucas Martinez is a utility midfielder who provides depth to our squad. His versatility and positive attitude make him a valuable squad player who can step up when needed.')">
                     <img src="image/500059722_122132986706766050_7046151034358366166_n.jpg" alt="Junaed Ali" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Junaed Ali</div>
@@ -914,7 +1275,7 @@
                     </div>
                 </div>
 
-                <div class="player-card striker">
+                <div class="player-card striker" onclick="showPlayerProfile('Gabriel Santos', 'Striker', 'player24.jpg', '4', '1', 'Goals', 'Assists', 'Gabriel Santos is an emerging talent with great potential. His hunger to improve and natural finishing ability make him an exciting prospect for the future of FC Young Boys.')">
                     <img src="player24.jpg" alt="Gabriel Santos" class="player-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="player-photo-placeholder" style="display: none;">Photo</div>
                     <div class="player-name">Gabriel Santos</div>
@@ -932,6 +1293,37 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3 class="footer-title">Connect With FC Young Boys</h3>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61572981502189" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📘</span>
+                        <span>Follow us on Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/fcyb_2025/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📷</span>
+                        <span>Follow us on Instagram</span>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-title">📞 Contact Us</div>
+                    <div class="phone-number">+8801741550922</div>
+                    <div class="contact-description">
+                        Call us for team inquiries, match tickets, or youth academy information. 
+                        Available Monday-Friday, 9 AM - 6 PM EST.
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    © 2025 FC Young Boys - Dhaka, Bangladesh | All Rights Reserved
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- Scores Page -->
@@ -942,28 +1334,16 @@
                 <p class="page-subtitle">Latest match results and upcoming fixtures</p>
             </div>
 
-            <div class="match-card">
-                    <div class="match-header">
-                        <div class="match-date">October 16, 2025</div>
-                        <div class="match-status draw">DRAW</div>
-                    </div>
-                    <div class="match-teams">
-                        <div class="team-name">FC Young Boys SNR</div>
-                        <div class="match-score">0 - 0</div>
-                        <div class="team-name">FC Young Boys JNR</div>
-                    </div>
-                </div>
-
             <div class="matches-container">
                 <div class="match-card">
                     <div class="match-header">
-                        <div class="match-date"> October 14, 2025</div>
+                        <div class="match-date">December 15, 2024</div>
                         <div class="match-status win">WIN</div>
                     </div>
                     <div class="match-teams">
                         <div class="team-name">FC Young Boys</div>
-                        <div class="match-score">0 - 0</div>
-                        <div class="team-name">Real Asperos</div>
+                        <div class="match-score">3 - 1</div>
+                        <div class="team-name">Ottawa United</div>
                     </div>
                 </div>
 
@@ -1016,6 +1396,226 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3 class="footer-title">Connect With FC Young Boys</h3>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61572981502189" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📘</span>
+                        <span>Follow us on Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/fcyb_2025/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📷</span>
+                        <span>Follow us on Instagram</span>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-title">📞 Contact Us</div>
+                    <div class="phone-number">+8801741550922</div>
+                    <div class="contact-description">
+                        Call us for team inquiries, match tickets, or youth academy information. 
+                        Available Monday-Friday, 9 AM - 6 PM EST.
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    © 2025 FC Young Boys - Dhaka, Bangladesh | All Rights Reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Enrollment Page -->
+    <div id="enrollment" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Join FC Young Boys</h1>
+                <p class="page-subtitle">Ready to be part of our championship team? Fill out the form below to apply!</p>
+            </div>
+
+            <form class="enrollment-form" onsubmit="submitEnrollment(event)">
+                <div class="form-section">
+                    <h3>📋 Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age" name="age" required min="16" max="35" placeholder="Your age">
+                        </div>
+                        <div class="form-group">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" id="nationality" name="nationality" placeholder="Your nationality">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+1 (xxx) xxx-xxxx">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>⚽ Playing Information</h3>
+                    <div class="form-group">
+                        <label for="primaryPosition">Primary Position *</label>
+                        <select id="primaryPosition" name="primaryPosition" required>
+                            <option value="">Select your main position</option>
+                            <option value="Goalkeeper">Goalkeeper</option>
+                            <option value="Defender">Defender</option>
+                            <option value="Midfielder">Midfielder</option>
+                            <option value="Striker">Striker</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Secondary Positions (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="secGoalkeeper" name="secondaryPositions" value="Goalkeeper">
+                                <label for="secGoalkeeper">Goalkeeper</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="secDefender" name="secondaryPositions" value="Defender">
+                                <label for="secDefender">Defender</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="secMidfielder" name="secondaryPositions" value="Midfielder">
+                                <label for="secMidfielder">Midfielder</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="secStriker" name="secondaryPositions" value="Striker">
+                                <label for="secStriker">Striker</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="experience">Years of Experience *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Select experience level</option>
+                                <option value="0-2">0-2 years</option>
+                                <option value="3-5">3-5 years</option>
+                                <option value="6-10">6-10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredFoot">Preferred Foot</label>
+                            <select id="preferredFoot" name="preferredFoot">
+                                <option value="">Select preferred foot</option>
+                                <option value="Right">Right</option>
+                                <option value="Left">Left</option>
+                                <option value="Both">Both</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>🏆 Football Background</h3>
+                    <div class="form-group">
+                        <label for="previousTeams">Previous Teams/Clubs</label>
+                        <textarea id="previousTeams" name="previousTeams" rows="3" placeholder="List any previous teams or clubs you've played for..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="achievements">Achievements & Awards</label>
+                        <textarea id="achievements" name="achievements" rows="3" placeholder="Any trophies, awards, or notable achievements..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="playingStyle">Playing Style & Strengths</label>
+                        <textarea id="playingStyle" name="playingStyle" rows="4" placeholder="Describe your playing style, strengths, and what makes you unique as a player..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>💪 Physical & Availability</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" name="height" placeholder="Your height in cm">
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" name="weight" placeholder="Your weight in kg">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">Training Availability</label>
+                        <select id="availability" name="availability">
+                            <option value="">Select your availability</option>
+                            <option value="Full-time">Full-time (All sessions)</option>
+                            <option value="Part-time">Part-time (Some sessions)</option>
+                            <option value="Weekends">Weekends only</option>
+                            <option value="Evenings">Evenings only</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalInfo">Additional Information</label>
+                        <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Any additional information you'd like to share with our coaching staff..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    🚀 Submit Application
+                </button>
+            </form>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3 class="footer-title">Connect With FC Young Boys</h3>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61572981502189" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📘</span>
+                        <span>Follow us on Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/fcyb_2025/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📷</span>
+                        <span>Follow us on Instagram</span>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-title">📞 Contact Us</div>
+                    <div class="phone-number">+8801741550922</div>
+                    <div class="contact-description">
+                        Call us for team inquiries, match tickets, or youth academy information. 
+                        Available Monday-Friday, 9 AM - 6 PM EST.
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    © 2025 FC Young Boys - Dhaka, Bangladesh | All Rights Reserved
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- About Page -->
@@ -1029,41 +1629,95 @@
             <div class="about-content">
                 <div class="about-section">
                     <h3>🏆 Our Story</h3>
-                    <p>FC Young Boys was founded in 2025 in Dhaka, Bangladesh, with a vision to develop young talent and compete at the highest levels of football. Our team represents the spirit of youth, determination, and excellence that defines Canadian football.</p>
+                    <p>FC Young Boys was founded in 2020 in Canberra, Canada, with a vision to develop young talent and compete at the highest levels of football. Our team represents the spirit of youth, determination, and excellence that defines Canadian football.</p>
                 </div>
 
                 <div class="about-section">
                     <h3>🎯 Our Mission</h3>
-                    <p>We are committed to nurturing young football talent while maintaining the highest standards of sportsmanship and teamwork. Our goal is to become a leading force in Bangladesh football and inspire the next generation of players.</p>
+                    <p>We are committed to nurturing young football talent while maintaining the highest standards of sportsmanship and teamwork. Our goal is to become a leading force in Canadian football and inspire the next generation of players.</p>
                 </div>
 
                 <div class="about-section">
                     <h3>📍 Home Ground</h3>
-                    <p>We play our home matches at the beautiful Azimpur Stadium, which has a capacity of 2000 passionate fans. The stadium features state-of-the-art facilities and provides an electric atmosphere for every match.</p>
+                    <p>We play our home matches at the beautiful Canberra Stadium, which has a capacity of 25,000 passionate fans. The stadium features state-of-the-art facilities and provides an electric atmosphere for every match.</p>
                 </div>
 
                 <div class="about-section">
                     <h3>📰 Latest News</h3>
                     
                     <div class="news-item">
-                        <div class="news-date"> October 15, 2025</div>
-                        <div class="news-title">Victory Against Real Asperos Extends Winning Streak</div>
-                        <p>FC Young Boys secured a commanding 0-0 victory against Real Asperos, extending our winning streak to 5 matches. We win the magazine penalty shootout Where our team missed three penalties and the winning goal scored by Md Ashik and our OPP score one penalty.</p>
+                        <div class="news-date">December 16, 2024</div>
+                        <div class="news-title">Victory Against Ottawa United Extends Winning Streak</div>
+                        <p>FC Young Boys secured a commanding 3-1 victory against Ottawa United, extending our winning streak to 5 matches. Marcus Johnson scored a brilliant hat-trick to lead the team to victory.</p>
                     </div>
 
                     <div class="news-item">
-                        <div class="news-date"> October 10, 2025</div>
-                        <div class="news-title">New Training Facility Opens in Azimpur</div>
+                        <div class="news-date">December 10, 2024</div>
+                        <div class="news-title">New Training Facility Opens in Canberra</div>
                         <p>Our brand new training facility officially opened this week, featuring cutting-edge equipment and technology to help our players reach their full potential.</p>
                     </div>
 
                     <div class="news-item">
-                        <div class="news-date">October 5, 2025</div>
+                        <div class="news-date">December 5, 2024</div>
                         <div class="news-title">Youth Academy Program Launches</div>
-                        <p>We're excited to announce the launch of our youth academy program, aimed at developing the next generation of football stars right here in Azimpur.</p>
+                        <p>We're excited to announce the launch of our youth academy program, aimed at developing the next generation of football stars right here in Canberra.</p>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3 class="footer-title">Connect With FC Young Boys</h3>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61572981502189" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📘</span>
+                        <span>Follow us on Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/fcyb_2025/?hl=en" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span class="social-icon">📷</span>
+                        <span>Follow us on Instagram</span>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-title">📞 Contact Us</div>
+                    <div class="phone-number">+8801741550922</div>
+                    <div class="contact-description">
+                        Call us for team inquiries, match tickets, or youth academy information. 
+                        Available Monday-Friday, 9 AM - 6 PM EST.
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    © 2025 FC Young Boys - Dhaka, Bangladesh | All Rights Reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Player Profile Modal -->
+    <div id="playerModal" class="player-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closePlayerProfile()">×</button>
+            <img id="modalPlayerPhoto" src="" alt="" class="modal-player-photo" onerror="this.style.display='none';">
+            <div id="modalPlayerName" class="modal-player-name"></div>
+            <div id="modalPlayerPosition" class="modal-player-position"></div>
+            
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div id="modalStat1Number" class="modal-stat-number"></div>
+                    <div id="modalStat1Label" class="modal-stat-label"></div>
+                </div>
+                <div class="modal-stat">
+                    <div id="modalStat2Number" class="modal-stat-number"></div>
+                    <div id="modalStat2Label" class="modal-stat-label"></div>
+                </div>
+            </div>
+            
+            <div id="modalPlayerDescription" class="modal-description"></div>
         </div>
     </div>
 
@@ -1084,6 +1738,142 @@
             event.target.classList.add('active');
         }
 
+        // Player profile functions
+        function showPlayerProfile(name, position, photo, stat1, stat2, stat1Label, stat2Label, description) {
+            document.getElementById('modalPlayerName').textContent = name;
+            document.getElementById('modalPlayerPosition').textContent = position;
+            
+            // Handle photo display
+            const modalPhoto = document.getElementById('modalPlayerPhoto');
+            modalPhoto.src = photo;
+            modalPhoto.alt = name;
+            modalPhoto.style.display = 'block';
+            modalPhoto.onerror = function() {
+                this.style.display = 'none';
+                // Create placeholder if photo fails to load
+                let placeholder = document.getElementById('modalPhotoPlaceholder');
+                if (!placeholder) {
+                    placeholder = document.createElement('div');
+                    placeholder.id = 'modalPhotoPlaceholder';
+                    placeholder.style.cssText = `
+                        width: 150px;
+                        height: 150px;
+                        background: rgba(255, 255, 255, 0.1);
+                        border: 3px dashed #ffd700;
+                        border-radius: 50%;
+                        margin: 0 auto 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1rem;
+                        color: #ffd700;
+                        text-align: center;
+                    `;
+                    placeholder.textContent = '📷 Player Photo';
+                    this.parentNode.insertBefore(placeholder, this.nextSibling);
+                }
+                placeholder.style.display = 'flex';
+            };
+            
+            document.getElementById('modalStat1Number').textContent = stat1;
+            document.getElementById('modalStat2Number').textContent = stat2;
+            document.getElementById('modalStat1Label').textContent = stat1Label;
+            document.getElementById('modalStat2Label').textContent = stat2Label;
+            document.getElementById('modalPlayerDescription').textContent = description;
+            
+            document.getElementById('playerModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePlayerProfile() {
+            document.getElementById('playerModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Clean up photo placeholder if it exists
+            const placeholder = document.getElementById('modalPhotoPlaceholder');
+            if (placeholder) {
+                placeholder.style.display = 'none';
+            }
+            
+            // Reset photo display
+            const modalPhoto = document.getElementById('modalPlayerPhoto');
+            modalPhoto.style.display = 'block';
+        }
+
+        // Enrollment form submission
+        function submitEnrollment(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = {};
+            
+            // Convert form data to object
+            for (let [key, value] of formData.entries()) {
+                if (data[key]) {
+                    // Handle multiple values (like checkboxes)
+                    if (Array.isArray(data[key])) {
+                        data[key].push(value);
+                    } else {
+                        data[key] = [data[key], value];
+                    }
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            // Show success message
+            const submitBtn = event.target.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '✅ Application Submitted Successfully!';
+            submitBtn.style.background = '#4caf50';
+            submitBtn.disabled = true;
+            
+            // Reset form after 3 seconds
+            setTimeout(() => {
+                event.target.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = 'linear-gradient(45deg, #ffd700, #ffed4e)';
+                submitBtn.disabled = false;
+                
+                // Show confirmation message
+                const confirmation = document.createElement('div');
+                confirmation.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: #4caf50;
+                    color: white;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                    z-index: 1001;
+                    font-weight: bold;
+                `;
+                confirmation.textContent = 'Thank you! Our coaching staff will review your application and contact you soon.';
+                document.body.appendChild(confirmation);
+                
+                setTimeout(() => {
+                    document.body.removeChild(confirmation);
+                }, 5000);
+            }, 3000);
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('playerModal');
+            if (event.target === modal) {
+                closePlayerProfile();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closePlayerProfile();
+            }
+        });
+
         // Add smooth scrolling effect when switching pages
         document.addEventListener('DOMContentLoaded', function() {
             const navItems = document.querySelectorAll('.nav-item');
@@ -1094,9 +1884,5 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98e6b4334452daf2',t:'MTc2MDQ0MDk5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; 
-b.getElementsByTagName('head')[0].appendChild(d)}
-}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
-</script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99190855761ddafb',t:'MTc2MDk2ODc0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
